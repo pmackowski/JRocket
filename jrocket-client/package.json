@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.html",
   "scripts": {
-    "tsc": "tsc -p src -w",
-    "start": "live-server --open=src"
+    "tsc": "gulp tsc",
+    "start": "live-server --open=dist"
   },
   "keywords": [],
   "author": "Pawel Mackowski (pmackowski)",
@@ -15,6 +15,8 @@
     "systemjs": "0.19.2"
   },
   "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-typescript": "^2.10.0",
     "live-server": "^0.8.2",
     "typescript": "^1.7.3"
   }

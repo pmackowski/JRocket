@@ -1,13 +1,13 @@
 <html>
 <head>
     <title>JRocket</title>
-    <script src="../../node_modules/systemjs/dist/system.src.js"></script>
-    <script src="../../node_modules/angular2/bundles/angular2.dev.js"></script>
+    <script src="lib/system.js"></script>
+    <script src="lib/angular2.dev.js"></script>
     <script>
         System.config({
-            packages: {'app': {defaultExtension: 'js'}}
+            packages: {'src': {defaultExtension: 'js'}}
         });
-        System.import('app/bootstrap');
+        System.import('src/app/bootstrap');
     </script>
 </head>
 <body>
