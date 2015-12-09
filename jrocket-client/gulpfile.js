@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var ts = require('gulp-typescript');
+var del = require('del');
 
 var tsProject = ts.createProject('tsconfig.json', {
     typescript: require('typescript')
