@@ -1,0 +1,21 @@
+{
+  "name": "jrocket-client",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "tsc": "tsc -p src -w",
+    "start": "live-server --open=src"
+  },
+  "keywords": [],
+  "author": "Pawel Mackowski (pmackowski)",
+  "license": "MIT",
+  "dependencies": {
+    "angular2": "2.0.0-alpha.48",
+    "systemjs": "0.19.2"
+  },
+  "devDependencies": {
+    "live-server": "^0.8.2",
+    "typescript": "^1.7.3"
+  }
+}

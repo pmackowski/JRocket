@@ -3,3 +3,5 @@
 /jrocket-server/target
 *.iml
 
+/jrocket-client/node_modules
+/npm-debug.log
