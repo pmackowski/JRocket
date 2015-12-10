@@ -1,7 +1,19 @@
 import {Component} from 'angular2/angular2';
+import {HelloWorldService} from '../../services/hello-world.service';
 
 @Component({
     selector: 'jrocket',
-    template: '<div>Hello world!</div>',
+    providers: [HelloWorldService],
+    template: '<div>{{ greeting }}</div>',
 })
-export class AppComponent {}
+export class AppComponent {
+
+    greeting : any;
+
+    constructor(helloWorldService : HelloWorldService) {
+         helloWorldService.getGreeting().subscribe(greeting => {
+             this.greeting = greeting;
+         });
+    }
+
+}

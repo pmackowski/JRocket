@@ -32,7 +32,8 @@ gulp.task('lib', function () {
     return gulp.src([
         'node_modules/es6-shim/es6-shim.js',
         'node_modules/systemjs/dist/system.js',
-        'node_modules/angular2/bundles/angular2.dev.js'])
+        'node_modules/angular2/bundles/angular2.dev.js',
+        'node_modules/angular2/bundles/http.js'])
         .pipe(gulp.dest(DIST + 'lib'));
 
 });
@@ -40,4 +41,9 @@ gulp.task('lib', function () {
 gulp.task('clean', function(done) {
     del(['dist'], done);
 });
+
+gulp.task('watch', ['typescript'], function() {
+    gulp.watch('src/**/*.ts', ['typescript']);
+});
+
 gulp.task('tsc', ['css', 'html', 'lib', 'typescript']);
