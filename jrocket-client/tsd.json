@@ -4,5 +4,24 @@
   "ref": "master",
   "path": "tools/typings",
   "bundle": "tools/typings/tsd.d.ts",
-  "installed": {}
+  "installed": {
+    "node/node.d.ts": {
+      "commit": "4c18852e74f2aaadf0a2017de155e2b03e140126"
+    },
+    "q/Q.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "gulp/gulp.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "orchestrator/orchestrator.d.ts": {
+      "commit": "7136728255d96038795d93c3e4b43c3c7de8ac1e"
+    },
+    "gulp-typescript/gulp-typescript.d.ts": {
+      "commit": "7ef9e894c621f0db9c3f67712be2c5f5d01f57f7"
+    },
+    "gulp-rename/gulp-rename.d.ts": {
+      "commit": "4c18852e74f2aaadf0a2017de155e2b03e140126"
+    }
+  }
 }

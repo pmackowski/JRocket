@@ -5,7 +5,7 @@
   "main": "index.html",
   "scripts": {
     "tsc": "gulp tsc",
-    "start": "live-server --open=dist"
+    "start": "tsd reinstall --clean && tsd link && tsd rebundle  && gulp typescript"
   },
   "keywords": [],
   "author": "Pawel Mackowski (pmackowski)",
@@ -18,8 +18,13 @@
   "devDependencies": {
     "del": "^2.2.0",
     "gulp": "^3.9.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-shell": "^0.5.1",
     "gulp-typescript": "^2.10.0",
+    "gulpclass": "0.0.4",
     "live-server": "^0.8.2",
+    "ts-node": "^0.5.4",
+    "tsd": "^0.6.5",
     "typescript": "^1.7.3"
   }
 }
