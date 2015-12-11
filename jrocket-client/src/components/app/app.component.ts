@@ -12,7 +12,7 @@ export class AppComponent {
 
     constructor(helloWorldService : HelloWorldService) {
          helloWorldService.getGreeting().subscribe(greeting => {
-             this.greeting = greeting._body;
+             this.greeting = greeting.text();
          });
     }
 
