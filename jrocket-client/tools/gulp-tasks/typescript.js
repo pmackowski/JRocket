@@ -6,6 +6,9 @@ module.exports = function (gulp, plugins) {
         });
 
         var tsResult = tsProject.src()
+            .pipe(plugins.rename(function (path) {
+                path.dirname = path.dirname.replace('src','.');
+            }))
             .pipe(ts(tsProject));
 
         return tsResult.js.pipe(gulp.dest('dist/'));

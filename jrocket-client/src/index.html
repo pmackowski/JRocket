@@ -7,9 +7,12 @@
     <script src="lib/http.js"></script>
     <script>
         System.config({
-            packages: {'src': {defaultExtension: 'js'}}
+            packages: {
+                'components': {defaultExtension: 'js'},
+                'services': {defaultExtension: 'js'}
+            }
         });
-        System.import('src/bootstrap');
+        System.import('bootstrap.js');
     </script>
 </head>
 <body>
