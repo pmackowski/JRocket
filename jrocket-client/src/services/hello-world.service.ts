@@ -8,7 +8,7 @@ export class HelloWorldService {
     }
 
     getGreeting() {
-        return this.http.get('http://localhost:4567/hello');
+        return this.http.get('/api/hello');
     }
 
 }

@@ -8,11 +8,11 @@ import {HelloWorldService} from '../../services/hello-world.service';
 })
 export class AppComponent {
 
-    greeting : any;
+    greeting : string;
 
     constructor(helloWorldService : HelloWorldService) {
          helloWorldService.getGreeting().subscribe(greeting => {
-             this.greeting = greeting;
+             this.greeting = greeting._body;
          });
     }
 
