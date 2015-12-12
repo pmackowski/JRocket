@@ -20,6 +20,8 @@ gulp.task('html-watch', ['html'], browserSync.reload);
 
 gulp.task('serve', ['lib', 'css', 'html', 'typescript'], getTask('serve'));
 
+gulp.task('test', getTask('test'));
+
 // Default Task
 gulp.task('default', ['serve']);
 
